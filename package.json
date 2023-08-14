@@ -18,10 +18,16 @@
   },
   "homepage": "https://github.com/Fdasert/frontend-project-44#readme",
   "dependencies": {
+    "eslint-config": "^0.3.0",
     "make": "^0.8.1",
     "readline-sync": "^1.4.10"
   },
   "bin": {
     "brain-games": "bin/brain-games.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.0"
   }
 }
