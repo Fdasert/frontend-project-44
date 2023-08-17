@@ -18,13 +18,14 @@
   },
   "homepage": "https://github.com/Fdasert/frontend-project-44#readme",
   "dependencies": {
-    "eslint-config": "^0.2.1",
+    "eslint-config": "^0.1.0",
     "make": "^0.0.0",
     "readline-sync": "^1.4.10"
   },
   "bin": {
-    "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-games": "bin/games/brain-games.js",
+    "brain-even": "bin/games/brain-even.js",
+    "braon-calc": "bin/games/brain-calc.js"
   },
   "devDependencies": {
     "eslint": "^8.47.0",
