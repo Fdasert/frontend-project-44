@@ -6,7 +6,7 @@ export function greetings() {
   return userName;
 }
 
-export function checkAnswer(question, userAnswer, userName, correctAnswers, gameIsOver) {
+export function checkEven(question, userAnswer, userName, correctAnswers, gameIsOver) {
   let updatedCorrectAnswers = correctAnswers;
   let updatedGameIsOver = gameIsOver;
 
@@ -24,4 +24,30 @@ export function checkAnswer(question, userAnswer, userName, correctAnswers, game
 export function askUser(question) {
   console.log(`Question: ${question}`);
   return readlineSync.question('Your answer: ');
+}
+
+export function operatorChoice(num1, operator, num2) {
+  switch (operator) {
+      case '+':
+          return num1 + num2;
+      case '-':
+          return num1 - num2;
+      case '*':
+          return num1 * num2;
+      default:
+  }
+}
+export function getRandomNumber() {
+  return Math.floor(Math.random() * 10) + 1;
+}
+
+export function checkGcd(firstNumber, secondNumber) {
+  while (firstNumber !== secondNumber) {
+    if (firstNumber > secondNumber) {
+      firstNumber = firstNumber - secondNumber;
+    } else {
+      secondNumber = secondNumber - firstNumber;
+    }
+  }
+  return firstNumber;
 }
