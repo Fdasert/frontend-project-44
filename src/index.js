@@ -28,26 +28,46 @@ export function askUser(question) {
 
 export function operatorChoice(num1, operator, num2) {
   switch (operator) {
-      case '+':
-          return num1 + num2;
-      case '-':
-          return num1 - num2;
-      case '*':
-          return num1 * num2;
-      default:
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      return null;
   }
 }
+
 export function getRandomNumber() {
   return Math.floor(Math.random() * 10) + 1;
 }
 
 export function checkGcd(firstNumber, secondNumber) {
-  while (firstNumber !== secondNumber) {
-    if (firstNumber > secondNumber) {
-      firstNumber = firstNumber - secondNumber;
+  let a = firstNumber;
+  let b = secondNumber;
+  while (a !== b) {
+    if (a > b) {
+      a -= b;
     } else {
-      secondNumber = secondNumber - firstNumber;
+      b -= a;
     }
   }
-  return firstNumber;
+  return a;
+}
+
+export function getRandomProggresion() {
+  const start = 5;
+  const count = Math.floor(Math.random() * 6) + 5;
+  const step = Math.floor(Math.random() * 10) + 1;
+
+  const progression = [];
+  const hiddenElem = Math.floor(Math.random() * count);
+
+  for (let i = 0; i < count; i += 1) {
+    const element = start + i * step;
+    progression.push(element);
+  }
+
+  return { progression, hiddenElem };
 }

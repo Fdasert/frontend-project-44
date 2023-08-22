@@ -1,4 +1,9 @@
-import { greetings, askUser, getRandomNumber, checkGcd } from '../index.js';
+import {
+  greetings,
+  askUser,
+  getRandomNumber,
+  checkGcd,
+} from '../index.js';
 
 const getGcdNumber = () => {
   const maxQuestions = 3;
@@ -12,7 +17,6 @@ const getGcdNumber = () => {
     const firstNumber = getRandomNumber();
     const secondNumber = getRandomNumber();
     const question = `${firstNumber} ${secondNumber}`;
-
 
     const correctAnswer = checkGcd(firstNumber, secondNumber);
     const userAnswer = Number(askUser(question));

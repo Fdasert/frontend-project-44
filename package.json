@@ -25,7 +25,8 @@
   "bin": {
     "brain-games": "bin/games/brain-games.js",
     "brain-even": "bin/games/brain-even.js",
-    "braon-calc": "bin/games/brain-calc.js"
+    "braon-calc": "bin/games/brain-calc.js",
+    "brain-progression": "bin/games/brain-progression.js"
   },
   "devDependencies": {
     "eslint": "^8.47.0",
