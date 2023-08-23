@@ -3,8 +3,30 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/39273daa9e506da6cfef/maintainability)](https://codeclimate.com/github/Fdasert/frontend-project-44/maintainability)
 
+# Brain-games
+This project is a console application that includes five math-related games!
 
-# Asciinema
+
+## How to install
+```
+make install
+```
+## How to run
+```
+brain-games
+
+brain-even
+
+brain-calc
+
+brain-progression
+
+brain-gcd
+
+brain-prime
+```
+
+## Asciinema
 
 ### Brain-even
 https://asciinema.org/a/yv7WfdfVLqeL1c0LFirTzwbd9
