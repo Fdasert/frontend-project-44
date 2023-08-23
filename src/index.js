@@ -71,3 +71,17 @@ export function getRandomProggresion() {
 
   return { progression, hiddenElem };
 }
+
+export function checkPrime(number) {
+  if (number <= 1) {
+    return 'isNotPrime';
+  }
+
+  for (let i = 2; i <= Math.sqrt(number); i += 1) {
+    if (number % i === 0) {
+      return 'isNotPrime';
+    }
+  }
+
+  return 'prime';
+}

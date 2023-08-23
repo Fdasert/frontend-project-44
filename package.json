@@ -23,10 +23,12 @@
     "readline-sync": "^1.4.10"
   },
   "bin": {
-    "brain-games": "bin/games/brain-games.js",
-    "brain-even": "bin/games/brain-even.js",
-    "braon-calc": "bin/games/brain-calc.js",
-    "brain-progression": "bin/games/brain-progression.js"
+    "brain-games": "src/bin/brain-games.js",
+    "brain-even": "src/bin/brain-even.js",
+    "braon-calc": "src/bin/brain-calc.js",
+    "brain-progression": "src/bin/brain-progression.js",
+    "brain-gcd": "src/bin/brain-gcd.js",
+    "brain-prime.js": "src/bin/brain-prime.js"
   },
   "devDependencies": {
     "eslint": "^8.47.0",
